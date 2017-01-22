@@ -8,3 +8,5 @@ Introduction to open data science (IODS) is an university course which goals is 
 - How to use diffrents softwares, like R and GitHub
 - How to learn use more open software tools
 - How to apply statistical methods to data
+
+<https://github.com/minna4125/IODS-project>
