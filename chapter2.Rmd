@@ -7,7 +7,7 @@
   head(students2014)
   str(students2014)
   
-####There is 7 varaiables and 166 observations.
+####There is 7 varriables and 166 observations.
 #####The variables are:
 
   1. (*gender*) Gender, male (M) or female (F). 
