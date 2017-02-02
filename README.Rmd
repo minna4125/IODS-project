@@ -1,9 +1,0 @@
----
-title: "README"
-author: "Minna Peralampi"
-date: "22. tammikuuta 2017"
-output: html_document
----
-This courses final assingment deadline is on Friday 10.3.2017.
-
-<https://minna4125.github.io/IODS-project/>
