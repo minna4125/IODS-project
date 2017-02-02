@@ -8,7 +8,7 @@
   str(students2014)
   
 ####There is 7 varriables and 166 observations.
-#####The variables are:
+##### The variables are:
 
   1. (*gender*) Gender, male (M) or female (F). 
   2. (*age*) Age, in years. 
