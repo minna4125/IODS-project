@@ -10,6 +10,8 @@
 ####There is 7 varriables and 166 observations.
 ##### The variables are:
 
+הההההההה
+
   1. (*gender*) Gender, male (M) or female (F). 
   2. (*age*) Age, in years. 
   3. (*attitude*) Attitude towards statistics. 
