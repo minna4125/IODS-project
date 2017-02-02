@@ -24,32 +24,24 @@ You can get more info of the questions asked in <http://www.helsinki.fi/~kvehkal
 
 ![Graphical overlook](Rplot02.png)
     
-#####From the overlook can be seen that there is two times more females than men in the respondents. Majory of the respondents is 20-30 years old. Other variables tend to look approximately like normal distribution. 
+######From the overlook can be seen that there is two times more females than men in the respondents. Majory of the respondents is 20-30 years old. Other variables tend to look approximately like normal distribution. 
   Most correlation is between deep and surface learning(-0.313), and between attitude and exam points (0.437).
 
 
 
-####Variables that correlate with the exam points the most are attitude, strategic learning and surface learning. 
+#####Variables that correlate with the exam points the most are attitude, strategic learning and surface learning. 
 
-#### Regression model with three explanitory variables for exam points:
+##### Regression model with three explanitory variables for exam points:
 
   my_model <- lm(points ~ attitude + stra + surf, data = students2014)
   
-#### Making the summary
-  
-  summary.formula(my_model)
+#### Summary
   
 ![Summary](Summary.png)
 
 #### This summary uses two sample t-test. Assumptions in the t-test are that both variables, for example attitude and exam points are normally distributed and independent. This test tells, if explaining variables (surf, stra and attitude) are useful or not. You can see that surf has a large p-value (0.46563) so it is resonable to leave it out in the next step.
 
-#####Making the other model
-  
-  my_model2 <- lm(points ~ attitude + stra, data = students2014)
-  
-#####And the summary
-  
-  summary(my_model2)
+#####Summary 2
 
 ![Summary 2](Summary2.png)
   
