@@ -31,37 +31,42 @@
 
 ![](famrel_hu.png)
 
+![](summaryhf.png)
 
-##### There was more people that had excelent relationship with their family in the group of less alcohol use, but both groups median was at the same point. This doesn't oppose the hypothesis but it isn't enough to confirm it either.
+##### Good family relationships correlate negatively with the high use of alcohol. 
 
 
 ![](goac.png)
-
-##### People who go out seem to be drinking more. This supports the hypothesis that going out correlates with more drinking.
+![](summaryhg.png)
+##### Going out correlates with the high consumption of alcohol.
 
 ![](svady.png)
-
-##### There is more men in high use of alcohol group than women. Also bigger portion of men was consuming alcohol than women. 
+![](summaryhs.png)
+#####There is 198 females and 184 males in the data.  There is more men in high use of alcohol group than women. Also bigger portion of men was consuming alcohol than women. 
 
 ![](abau.png)
 
-##### There isn't really enough people in the study who had rural address to say anything about it's effect on drinking compared to urban living. 
+![](summaryha.png)
+##### Urban living seems to correlate negatively with the high use of alcohol. 
 
 
 
-### Summary of the fitted model shows that the variables coexist with persons high use of alcohol to some exctenct. Numbers look okay, but it doesn't tell the whole story.
+### Summary of the fitted model shows that the variables do affect persons use of alcohol. P values suggest that all variables are statistically significant and errors aren't too bad.
 
 ![](ci.png)
 
-### Coefficients of the model as odds ratios and their confidence intervals shows that familyrelationships and urban address make it less likely to individual to hvae high alcohol consumption. Going out a lot anf being male make it more likely to individual to consume a lot of alcohol.
+### Coefficients of the model as odds ratios and their confidence intervals shows that familyrelationships and urban address make it less likely to individual to have high alcohol consumption. Going out a lot and being a male makes it more likely to individual to consume a lot of alcohol.
 ![](or.png)
 
 
       
-### Inaccutarely classified individuals. Predictions classifie 12 people falsely to high consume alcohol and 70 people falsely to not high use of alcohol. 
+### Inaccutarely classified individuals. 
+Predictions classifie 12 people falsely to high consume alcohol and 70 people falsely to not high use of alcohol.
+
+
 | H/P    | FALSE  | TRUE  |       
 | ------ | ------ | ----- |
 | FALSE  | 256    |    12 |       
 | TRUE   | 70     |    44 | 
 
-### Training error is 0.2156597 ~ 22 % which isn't too bad.
+### Training error is 0.2156597 ~ 22 %, so the model works better than just guessing.
