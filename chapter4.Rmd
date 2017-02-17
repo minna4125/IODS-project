@@ -1,0 +1,71 @@
+####Clustering and classification
+#
+#
+#
+##### Explanations for the variables can be found at: <https://stat.ethz.ch/R-manual/R-devel/library/MASS/html/Boston.html>
+
+
+##### The data has 506 rows and 14 columns. Numerical summary of the variables looks like this:
+
+
+!["Summary of the variables"](Bsummary.png)
+
+##### The graphical summary of the variables. The variables aren't normally distributed. 
+
+![Variable matrix](oikea.png)
+
+##### The graphical summary of the correlations of the variables.
+![](corrmatrix.png)
+##### Strongest positive correlations are between:
+1.dis and 
+  -age
+  -nox 
+  -indus
+2. istat and medv
+
+##### Strongest negative correlations are between:
+1.tax and rad
+2.indus and nox
+#
+#
+#
+##### Scaled variables. All the variables mean has been fitted at zero.
+![](ssummary.png)
+
+
+#####LDA plot
+![](lda2.png)
+
+
+
+#####Cross tabulations
+![](cross.png)
+
+##### From the cross tabulations can be concluded that model does work to some exctenct. It works better on high and low values than the middle ones.
+
+
+#### Summary of the distances between the observations. The eucliadian method was used.
+![](dist_eu.png)
+
+
+#### Graphical look at the optimal number of clusters
+![](twcss2.png)
+
+##### Total wcss drops most rapidly from 1 to 2 so we choose 2 clusters for our model.
+
+![](cluster4.png)
+
+##### Results show that there is some similarity in the data and you can make okay predictions with it.
+
+
+
+
+
+
+
+
+
+
+
+
+
