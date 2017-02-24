@@ -2,6 +2,9 @@
 ## Minna Peralampi
 ## 17.2.2017
 
+
+
+
 #Reading the "Human development" data
 hd <- read.csv("http://s3.amazonaws.com/assets.datacamp.com/production/course_2218/datasets/human_development.csv", 
                stringsAsFactors = F)
@@ -49,8 +52,10 @@ gii <- read.csv("http://s3.amazonaws.com/assets.datacamp.com/production/course_2
 
     
 #Joining the two datasets
-  #Accessiing to the dplyr library
+  #Accessiing to the dplyr and tidyr and stringr library
   library(dplyr)
+  library(tidyr)
+  library(stringr)
     
   #Joining the two datsets
   human <- inner_join(hd, gii, by = "country")
@@ -61,4 +66,38 @@ gii <- read.csv("http://s3.amazonaws.com/assets.datacamp.com/production/course_2
   #Dimensions are right. Saving the dataset in the data folder
   write.csv(human, file = "human", row.names = F)
   
-    
+# Changing GNI variable in human2 to numeric 
+  library(stringr)
+  human2 <- read.csv("human", header = T, sep = ",", stringsAsFactors = F)
+  human2$GNI <- as.numeric(gsub(",", ".", human2$GNI))
+
+  
+# Variables to keep
+  keep <- c("country", "edu2.ratio", "lab.ratio", "life.exp", "edu.exp", "GNI", "MMR", "ABR", "Pr.parl")
+  
+# Selecting the keep variables
+  human2 <- select(human2, one_of(keep))
+  
+# Removing rows with NA values
+  human2 <- filter(human2, complete.cases(human2))
+
+# Removing rows with regions
+  last <- nrow(human2) - 7
+  human2 <- human2[1:last, ]
+  
+# Changing rownames to country names
+  rownames(human2) <- human2$country
+  
+# Removing country column
+  human2 <- select(human2, -country)
+
+#Cheking that it is right  
+ dim(human2)
+ summary(human2)
+
+#Writing new human file  
+  write.csv(human2, file = "human2", row.names = T)
+ 
+  
+  
+  
