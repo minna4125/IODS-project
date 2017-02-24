@@ -77,7 +77,7 @@
 
 ####Analysis of the PCA
 
-#####The results differ a lot between standardized and non-standardized data. Frist one doesn't really tell anything, because most variables don't draw an arrow. 
+#####The results differ a lot between standardized and non-standardized data. Frist one doesn't really tell anything, 
   On the second one we can see that MMR and ABR correlate positevly with each other and negatively with life excpectancy and education excpectancy.Young mothers are more likely to die during pregnancy and child birth than older mothers. Also, young women are more likely to become pregnant in the countries that have lower education and life expectancy because of lack of possibilities to choose otherwise and little to none sexual education.
   
 #####The two principal dimensions are secondary education ratio and labor force ratio. They have almost 0 correlation (0.00956).
@@ -129,6 +129,6 @@
 
 ![](data\factormap.png)
 
-####We can see breakfast, milk, middle and senior level workers are similar variables. 
+####Black tea and milk are similar variables. Other similiar variables to them are breakfest and middle/senior possition as a worker. Workman, other than worker and green tea are diffrent from all the other variables. We could say from this anlysis that people who drink black tea drink it more likely with milk than people who drink green tea.
 
 
