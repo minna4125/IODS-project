@@ -30,7 +30,7 @@
     
     cor(human)%>%corrplot()
 
-![](variable5.png)
+![](data\variable5.png)
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-![](corr5.png)
+![](data\corr5.png)
 
 
 
@@ -59,7 +59,7 @@
 
 
   
-![](nscaled.png)
+![](data\nscaled.png)
 
 
 
@@ -72,7 +72,7 @@
 
 
 
-![](scaled.png)
+![](data\scaled.png)
 
 
 ####Analysis of the PCA
@@ -104,7 +104,7 @@
 ####Six variables to look closer at
 
     # column names to keep in the dataset
-    keep_columns <- c("Tea", "How", "breakfast", "SPC")
+    keep_columns <- c("Tea", "How", "breakfast", "SPC", "friendliness","evening" )
     
     # select the 'keep_columns' to create a new dataset
     tea_time <- select(tea, one_of(keep_columns))
@@ -116,7 +116,7 @@
     # visualize the dataset
     gather(tea_time) %>% ggplot(aes(value)) + facet_wrap("key", scales = "free") + geom_bar()+theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 8))
 
-![](v5.png)
+![](data\v5.png)
 
     # multiple correspondence analysis
     mca <- FactoMineR::MCA(tea_time, graph = FALSE)
@@ -127,7 +127,7 @@
     # visualize MCA
     plot(mca, habillage = "quali", invisible=c("ind"))
 
-![](tea2.png)
+![](data\factormap.png)
 
 ####We can see breakfast, milk, middle and senior level workers are similar variables. 
 
